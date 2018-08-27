@@ -1,0 +1,2 @@
+# cosc4931-socialethicalimp-fa18
+This is the github repository for COSC 4931: Social and Ethical Implications of Data for Fall 2018 at Marquette University. The official course description is as follows: An introduction to the ethical and social consequences of collecting, curating and analyzing data in academia, public and private contexts. This course takes a socio-technical stance - imagine this to be a mix of a sociology and computer science course. There will be lots of reading, writing, coding and discussions.
