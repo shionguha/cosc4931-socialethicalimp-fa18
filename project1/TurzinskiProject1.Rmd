@@ -1,0 +1,642 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+install.packages ("caret")
+
+install.packages ("dprep")
+
+install.packages ("mlbench")
+
+install.packages('e1071', dependencies=TRUE)
+
+install.packages ("rpart")
+
+install.packages("rpart.plot")
+
+install.packages("tidyverse")
+
+library(mlbench)
+
+library(dprep)
+
+library(caret)
+
+library(tidyverse)
+
+library(lubridate)
+
+library(tibble)
+
+library(e1071)
+
+library(rpart)
+
+library(rpart.plot)
+
+library(caret)
+
+library(tiddyverse)
+
+
+
+
+tictactoe<- read_csv("tic-tac-toe.csv")
+
+head(tictactoe)
+
+
+
+
+
+
+as_tibble(tictactoe)
+
+View(tictactoe)
+
+
+
+--change the columns to something that makes sense
+--attribute 1
+
+mutate(tictactoe, topleftsquare = tictactoe$'x')
+
+
+tictactoe <- mutate(tictactoe, topleftsquare= tictactoe$'x')
+
+--attribute 2
+mutate(tictactoe, topmiddlesquare = tictactoe$'x_1')
+
+
+tictactoe <- mutate(tictactoe, topmiddlesquare = tictactoe$'x_1')
+
+--attribute 3
+
+mutate(tictactoe, toprightsquare = tictactoe$'x_2')
+
+
+tictactoe <- mutate(tictactoe, toprightsquare = tictactoe$'x_2')
+
+
+--attribute 4
+
+mutate(tictactoe, middleleftsquare = tictactoe$'x_3')
+
+
+tictactoe <- mutate(tictactoe, middleleftsquare = tictactoe$'x_3')
+
+--attribute 5
+
+mutate(tictactoe, middlemiddlesquare = tictactoe$'o')
+
+
+tictactoe <- mutate(tictactoe, middlemiddlesquare = tictactoe$'o')
+
+--attribute 6
+
+mutate(tictactoe, middlerightsquare = tictactoe$'o_1')
+
+
+tictactoe <- mutate(tictactoe, middlerightsquare = tictactoe$'o_1')
+
+--attribute 7
+
+
+mutate(tictactoe, bottomleftsquare = tictactoe$'x_4')
+
+
+tictactoe <- mutate(tictactoe, bottomleftsquare = tictactoe$'x_4')
+
+--attribute 8
+
+mutate(tictactoe, bottommiddlesquare = tictactoe$'o_2')
+
+
+tictactoe <- mutate(tictactoe, bottommiddlesquare = tictactoe$'o_2')
+
+--attribute 9
+
+mutate(tictactoe, bottomrightsquare = tictactoe$'o_3')
+
+
+tictactoe <- mutate(tictactoe, bottomrightsquare = tictactoe$'o_3')
+
+--attribute 10
+
+mutate(tictactoe, class = tictactoe$'positive')
+
+
+tictactoe <- mutate(tictactoe, class = tictactoe$'positive')
+
+
+---selecting the columns I want and save the new table with col
+
+View(tictactoe)
+
+tictactoe <- select(tictactoe,topleftsquare,topmiddlesquare,toprightsquare,middleleftsquare,middlemiddlesquare,middlerightsquare,bottomleftsquare,bottommiddlesquare,bottomrightsquare,class)
+
+--changing fields to factors for exploratory
+
+tictactoe$topleftsquare <- as.factor(tictactoe$topleftsquare)
+
+tictactoe$topmiddlesquare <- as.factor(tictactoe$topmiddlesquare)
+
+tictactoe$toprightsquare <- as.factor(tictactoe$toprightsquare)
+
+tictactoe$middleleftsquare <- as.factor(tictactoe$middleleftsquare)
+
+tictactoe$middlemiddlesquare <- as.factor(tictactoe$middlemiddlesquare)
+
+tictactoe$middlerightsquare <- as.factor(tictactoe$middlerightsquare)
+
+tictactoe$bottomleftsquare <- as.factor(tictactoe$bottomleftsquare)
+
+tictactoe$bottommiddlesquare <- as.factor(tictactoe$bottommiddlesquare)
+
+tictactoe$bottomrightsquare <- as.factor(tictactoe$bottomrightsquare)
+
+tictactoe$class <- as.factor(tictactoe$class)
+
+
+as_tibble(tictactoe)
+
+--exploratory
+
+
+ggplot(data = tictactoe)+ 
+  geom_bar(mapping = aes(x = class))
+
+
+
+toprightsquaretype <- tictactoe %>% group_by(class, toprightsquare) %>% summarise(count = n())
+ggplot(data = toprightsquaretype, mapping = aes(x=class, y =toprightsquare))+ geom_tile(mapping = aes(fill=count), colour = "white") + scale_fill_gradient(low = "white", high = "steelblue")
+
+
+topleftsquaretype <- tictactoe %>% group_by(class, topleftsquare) %>% summarise(count = n())
+ggplot(data = topleftsquaretype, mapping = aes(x=class, y = topleftsquare))+ geom_tile(mapping = aes(fill=count), colour = "white") + scale_fill_gradient(low = "white", high = "steelblue")
+
+topmiddlesquaretype <- tictactoe %>% group_by(class, topmiddlesquare) %>% summarise(count = n())
+ggplot(data = topmiddlesquaretype, mapping = aes(x=class, y= topmiddlesquare))+ geom_tile(mapping = aes(fill=count), colour = "white") + scale_fill_gradient(low = "white", high = "steelblue")
+
+middleleftsquaretype <- tictactoe %>% group_by(class, middleleftsquare) %>% summarise(count = n())
+ggplot(data = middleleftsquaretype, mapping = aes(x=class, y = middleleftsquare))+ geom_tile(mapping = aes(fill=count), colour = "white") + scale_fill_gradient(low = "white", high = "steelblue")
+
+middlemiddlesquaretype <- tictactoe %>% group_by(class, middlemiddlesquare) %>% summarise(count = n())
+ggplot(data = middlemiddlesquaretype, mapping = aes(x=class, y = middlemiddlesquare))+ geom_tile(mapping = aes(fill=count), colour = "white") + scale_fill_gradient(low = "white", high = "steelblue")
+
+middlerightsquaretype <- tictactoe %>% group_by(class, middlerightsquare) %>% summarise(count = n())
+ggplot(data = middlerightsquaretype, mapping = aes(x=class, y = middlerightsquare))+ geom_tile(mapping = aes(fill=count), colour = "white") + scale_fill_gradient(low = "white", high = "steelblue")
+
+bottomleftsquaretype <- tictactoe %>% group_by(class, bottomleftsquare) %>% summarise(count = n())
+ggplot(data = bottomleftsquaretype, mapping = aes(x=class, y = bottomleftsquare))+ geom_tile(mapping = aes(fill=count), colour = "white") + scale_fill_gradient(low = "white", high = "steelblue")
+
+bottommiddlesquaretype <- tictactoe %>% group_by(class, bottommiddlesquare) %>% summarise(count = n())
+ggplot(data = bottommiddlesquaretype, mapping = aes(x=class, y = bottommiddlesquare))+ geom_tile(mapping = aes(fill=count), colour = "white") + scale_fill_gradient(low = "white", high = "steelblue")
+
+
+bottomrightsquaretype <- tictactoe %>% group_by(class, bottomrightsquare) %>% summarise(count = n())
+ggplot(data = bottomrightsquaretype, mapping = aes(x=class, y = bottomrightsquare))+ geom_tile(mapping = aes(fill=count), colour = "white") + scale_fill_gradient(low = "white", high = "steelblue")
+
+--Partitioning
+
+set.seed(1234)
+
+--1234 was just random picking
+
+
+trainIndex <- createDataPartition(tictactoe$class, p = 0.8,                                  list = FALSE, 
+                                  times = 1)
+
+
+tictactoeTrain <- tictactoe[trainIndex,]
+
+as_tibble(tictactoeTrain)
+
+tictactoeTest  <- tictactoe[-trainIndex,]
+
+as_tibble(tictactoeTest)
+
+as_tibble(tictactoe)
+
+--scale
+
+scaler <- preProcess(tictactoeTrain, method = c("center", "scale"))
+  
+tictactoeTrain <- predict(scaler, tictactoeTrain)  
+
+tictactoeTest <- predict(scaler, tictactoeTest)
+
+--Train Model
+
+tictactoeM1R1 <- train(class ~.,data = tictactoeTrain, method = "knn")
+tictactoeM1TestPrediction1 <- predict(tictactoeM1R1, tictactoeTest)
+mutate(tictactoeTest,predictedclass = tictactoeM1TestPrediction1)
+
+tictactoeTest <-mutate(tictactoeTest, predictedclass = tictactoeM1TestPrediction1)
+
+confusionMatrix(tictactoeM1TestPrediction1, tictactoeTest$class)
+
+
+----
+
+--modeling Round 1
+
+
+tictactoeM2R1 <-train(class ~ topleftsquare, data = tictactoeTrain, method = "knn")
+tictactoeM2TestPrediction2 <- predict(tictactoeM2R1, tictactoeTest)
+
+
+confusionMatrix(tictactoeM2TestPrediction2, tictactoeTest$class)
+
+View(Predictedtype1)
+View(tictactoeM2TestPrediction2)
+
+--real vs predicted heat map
+
+Predictedtype1 <- tictactoeTrain %>% group_by(class,middlemiddlesquare ) %>% summarise(count = n())
+ggplot(data = Predictedtype1, mapping = aes(x=class, y = middlemiddlesquare))+ geom_tile(mapping = aes(fill=count), colour = "white") + scale_fill_gradient(low = "white", high = "steelblue")
+
+View(tictactoeTrain)
+
+Predictedtype2 <- tictactoeTest %>% group_by(class,predmodel11) %>% summarise(count = n())
+ggplot(data = Predictedtype2, mapping = aes(x=class, y = predmodel1))+ geom_tile(mapping = aes(fill=count), colour = "white") + scale_fill_gradient(low = "white", high = "steelblue")
+
+
+tictactoeTest <-mutate(tictactoeTest, predmodel1 = predict(tictactoeM3R1, tictactoeTest))
+
+--predicted_model1 <- mutate(glucose, predicted = predict(model_1, glucose))
+
+predict(tictactoeM3R1, tictactoeTest)
+
+tictactoeM6TestPrediction6
+
+View(tictactoeTest)
+
+View(tictactoeTrain)
+head(tictactoeTrain)
+
+tictactoeM3R1<-train(class ~ topmiddlesquare, data = tictactoeTrain, method = "knn")
+tictactoeM3TestPrediction3 <- predict(tictactoeM3R1, tictactoeTest)
+
+confusionMatrix(tictactoeM3TestPrediction3, tictactoeTest$class)
+
+
+tictactoeM4R1 <-train(class ~ toprightsquare, data = tictactoeTrain, method = "knn")
+tictactoeM4TestPrediction4 <- predict(tictactoeM4R1, tictactoeTest)
+
+confusionMatrix(tictactoeM4TestPrediction4, tictactoeTest$class)
+
+
+tictactoeM5R1 <-train(class ~ middleleftsquare, data = tictactoeTrain, method = "knn")
+tictactoeM5TestPrediction5 <- predict(tictactoeM5R1, tictactoeTest)
+
+confusionMatrix(tictactoeM5TestPrediction5, tictactoeTest$class)
+
+
+
+
+tictactoeM6R1 <-train(class ~ middlemiddlesquare, data = tictactoeTrain, method = "knn")
+tictactoeM6TestPrediction6 <- predict(tictactoeM6R1, tictactoeTest)
+
+confusionMatrix(tictactoeM6TestPrediction6, tictactoeTest$class)
+
+
+tictactoeM7R1 <-train(class ~ middlerightsquare, data = tictactoeTrain, method = "knn")
+tictactoeM7TestPrediction7 <- predict(tictactoeM7R1, tictactoeTest)
+
+confusionMatrix(tictactoeM7TestPrediction7, tictactoeTest$class)
+
+
+tictactoeM8R1 <-train(class ~ bottomleftsquare, data = tictactoeTrain, method = "knn")
+tictactoeM8TestPrediction8 <- predict(tictactoeM8R1, tictactoeTest)
+
+confusionMatrix(tictactoeM8TestPrediction8, tictactoeTest$class)
+
+
+tictactoeM9R1 <-train(class ~ bottommiddlesquare, data = tictactoeTrain, method = "knn")
+tictactoeM9TestPrediction9 <- predict(tictactoeM9R1, tictactoeTest)
+
+confusionMatrix(tictactoeM9TestPrediction9, tictactoeTest$class)
+
+
+tictactoeM10R1 <-train(class ~ bottomrightsquare, data = tictactoeTrain, method = "knn")
+tictactoeM10TestPrediction10 <- predict(tictactoeM10R1, tictactoeTest)
+
+confusionMatrix(tictactoeM10TestPrediction10, tictactoeTest$class)
+
+---round 2 
+
+
+tictactoeM1R2 <-train(class ~ middlemiddlesquare+topleftsquare, data = tictactoeTrain, method = "knn")
+tictactoeM1TestPrediction11 <- predict(tictactoeM1R2, tictactoeTest)
+
+confusionMatrix(tictactoeM1TestPrediction11, tictactoeTest$class)
+
+
+tictactoeM2R2 <-train(class ~ middlemiddlesquare+topmiddlesquare, data = tictactoeTrain, method = "knn")
+tictactoeM2TestPrediction12 <- predict(tictactoeM2R2, tictactoeTest)
+
+confusionMatrix(tictactoeM2TestPrediction12, tictactoeTest$class)
+  
+  
+tictactoeM3R2 <-train(class ~ middlemiddlesquare+toprightsquare, data = tictactoeTrain, method = "knn")
+tictactoeM3TestPrediction13 <- predict(tictactoeM3R2, tictactoeTest)
+
+confusionMatrix(tictactoeM3TestPrediction13, tictactoeTest$class)  
+  
+
+tictactoeM4R2 <-train(class ~ middlemiddlesquare+middlerightsquare, data = tictactoeTrain, method = "knn")
+tictactoeM4TestPrediction14 <- predict(tictactoeM4R2, tictactoeTest)
+
+confusionMatrix(tictactoeM4TestPrediction14, tictactoeTest$class) 
+
+
+tictactoeM5R2 <-train(class ~ middlemiddlesquare+middleleftsquare, data = tictactoeTrain, method = "knn")
+tictactoeM5TestPrediction15 <- predict(tictactoeM5R2, tictactoeTest)
+
+confusionMatrix(tictactoeM5TestPrediction15, tictactoeTest$class)
+
+
+tictactoeM6R2 <-train(class ~ middlemiddlesquare+bottomleftsquare, data = tictactoeTrain, method = "knn")
+tictactoeM6TestPrediction16 <- predict(tictactoeM6R2, tictactoeTest)
+
+confusionMatrix(tictactoeM6TestPrediction16, tictactoeTest$class) 
+
+tictactoeM7R2 <-train(class ~ middlemiddlesquare+bottommiddlesquare, data = tictactoeTrain, method = "knn")
+tictactoeM7TestPrediction17 <- predict(tictactoeM7R2, tictactoeTest)
+
+confusionMatrix(tictactoeM7TestPrediction17, tictactoeTest$class) 
+
+
+tictactoeM8R2 <-train(class ~ middlemiddlesquare+bottomrightsquare, data = tictactoeTrain, method = "knn")
+tictactoeM8TestPrediction18 <- predict(tictactoeM8R2, tictactoeTest)
+
+confusionMatrix(tictactoeM8TestPrediction18, tictactoeTest$class)
+
+--round two comparision
+
+
+tictactoeM2R1 <-train(class ~ topleftsquare, data = tictactoeTrain, method = "knn")
+tictactoeM2TestPrediction2 <- predict(tictactoeM2R1, tictactoeTest)
+
+confusionMatrix(tictactoeM2TestPrediction2, tictactoeTest$class)
+
+View(Predictedtype1)
+View(tictactoeM2TestPrediction2)
+
+--real vs predicted heat map
+
+tictactoeTest <-mutate(tictactoeTest, predmodel2 = predict(tictactoeM5R2, tictactoetest))
+
+
+Predictedtype3 <- tictactoeTest %>% group_by(class,predmodel2) %>% summarise(count = n())
+ggplot(data = Predictedtype3, mapping = aes(x=class, y = predmodel2))+ geom_tile(mapping = aes(fill=count), colour = "white") + scale_fill_gradient(low = "white", high = "steelblue")
+
+
+--round threee
+
+
+tictactoeM1R3 <-train(class ~ middlemiddlesquare+middleleftsquare+topleftsquare, data = tictactoeTrain, method = "knn")
+tictactoeM1TestPrediction19 <- predict(tictactoeM1R3, tictactoeTest)
+confusionMatrix(tictactoeM1TestPrediction19, tictactoeTest$class)
+
+
+tictactoeM2R3 <-train(class ~ middlemiddlesquare+middleleftsquare+topmiddlesquare, data = tictactoeTrain, method = "knn")
+tictactoeM2TestPrediction20 <- predict(tictactoeM2R3, tictactoeTest)
+confusionMatrix(tictactoeM2TestPrediction20, tictactoeTest$class)
+
+
+tictactoeM3R3 <-train(class ~ middlemiddlesquare+middleleftsquare+toprightsquare, data = tictactoeTrain, method = "knn")
+tictactoeM3TestPrediction21 <- predict(tictactoeM3R3, tictactoeTest)
+confusionMatrix(tictactoeM3TestPrediction21, tictactoeTest$class)
+
+
+tictactoeM4R3 <-train(class ~ middlemiddlesquare+middleleftsquare+middlerightsquare, data = tictactoeTrain, method = "knn")
+tictactoeM4TestPrediction22 <- predict(tictactoeM4R3, tictactoeTest)
+confusionMatrix(tictactoeM4TestPrediction22, tictactoeTest$class)
+
+
+tictactoeM5R3 <-train(class ~ middlemiddlesquare+middleleftsquare+bottomleftsquare, data = tictactoeTrain, method = "knn")
+tictactoeM5TestPrediction23 <- predict(tictactoeM5R3, tictactoeTest)
+confusionMatrix(tictactoeM5TestPrediction23, tictactoeTest$class)
+
+
+tictactoeM6R3 <-train(class ~ middlemiddlesquare+middleleftsquare+bottommiddlesquare, data = tictactoeTrain, method = "knn")
+tictactoeM6TestPrediction24 <- predict(tictactoeM6R3, tictactoeTest)
+confusionMatrix(tictactoeM6TestPrediction24, tictactoeTest$class)
+
+
+tictactoeM7R3 <-train(class ~ middlemiddlesquare+middleleftsquare+bottomrightsquare, data = tictactoeTrain, method = "knn")
+tictactoeM7TestPrediction25 <- predict(tictactoeM7R3, tictactoeTest)
+confusionMatrix(tictactoeM7TestPrediction25, tictactoeTest$class)
+
+--real vs predicted heat map
+
+tictactoeTest <-mutate(tictactoeTest, predmodel3 = predict(tictactoeM4R3, tictactoeTest))
+
+Predictedtype4 <- tictactoeTest %>% group_by(class,predmodel3) %>% summarise(count = n())
+ggplot(data = Predictedtype4, mapping = aes(x=class, y = predmodel3))+ geom_tile(mapping = aes(fill=count), colour = "white") + scale_fill_gradient(low = "white", high = "steelblue")
+
+
+
+--round4
+
+
+tictactoeM1R4 <-train(class ~ middlemiddlesquare+middleleftsquare+middlerightsquare+topleftsquare, data = tictactoeTrain, method = "knn")
+tictactoeM1TestPrediction26 <- predict(tictactoeM1R4, tictactoeTest)
+confusionMatrix(tictactoeM1TestPrediction26, tictactoeTest$class)
+
+
+tictactoeM2R4 <-train(class ~ middlemiddlesquare+middleleftsquare+middlerightsquare+topmiddlesquare, data = tictactoeTrain, method = "knn")
+tictactoeM2TestPrediction27 <- predict(tictactoeM2R4, tictactoeTest)
+confusionMatrix(tictactoeM2TestPrediction27, tictactoeTest$class)
+
+
+tictactoeM3R4 <-train(class ~ middlemiddlesquare+middleleftsquare+middlerightsquare+toprightsquare, data = tictactoeTrain, method = "knn")
+tictactoeM3TestPrediction28 <- predict(tictactoeM3R4, tictactoeTest)
+confusionMatrix(tictactoeM3TestPrediction28, tictactoeTest$class)
+
+
+tictactoeM4R4 <-train(class ~middlemiddlesquare+middleleftsquare+middlerightsquare+bottomleftsquare, data = tictactoeTrain, method = "knn")
+tictactoeM4TestPrediction29 <- predict(tictactoeM4R4, tictactoeTest)
+confusionMatrix(tictactoeM4TestPrediction29, tictactoeTest$class)
+
+
+tictactoeM5R4 <-train(class ~ middlemiddlesquare+middleleftsquare+middlerightsquare+bottommiddlesquare, data = tictactoeTrain, method = "knn")
+tictactoeM5TestPrediction30 <- predict(tictactoeM5R4, tictactoeTest)
+confusionMatrix(tictactoeM5TestPrediction30, tictactoeTest$class)
+
+
+tictactoeM6R4 <-train(class ~ middlemiddlesquare+middleleftsquare+middlerightsquare+bottomrightsquare, data = tictactoeTrain, method = "knn")
+tictactoeM6TestPrediction31 <- predict(tictactoeM6R4, tictactoeTest)
+confusionMatrix(tictactoeM6TestPrediction31, tictactoeTest$class)
+
+
+--real vs predicted heat map
+
+tictactoeTest <-mutate(tictactoeTest, predmodel4 = predict(tictactoeM4R4, tictactoeTest))
+
+Predictedtype5 <- tictactoeTest %>% group_by(class,predmodel4) %>% summarise(count = n())
+ggplot(data = Predictedtype5, mapping = aes(x=class, y = predmodel4))+ geom_tile(mapping = aes(fill=count), colour = "white") + scale_fill_gradient(low = "white", high = "steelblue")
+
+
+
+--Round 5
+
+
+tictactoeM1R5 <-train(class ~ middlemiddlesquare+middleleftsquare+middlerightsquare+bottomleftsquare+topleftsquare, data = tictactoeTrain, method = "knn")
+tictactoeM1TestPrediction32 <- predict(tictactoeM1R5, tictactoeTest)
+confusionMatrix(tictactoeM1TestPrediction32, tictactoeTest$class)
+
+
+tictactoeM2R5 <-train(class ~ middlemiddlesquare+middleleftsquare+middlerightsquare+bottomleftsquare+topmiddlesquare, data = tictactoeTrain, method = "knn")
+tictactoeM2TestPrediction33 <- predict(tictactoeM2R5, tictactoeTest)
+confusionMatrix(tictactoeM2TestPrediction33, tictactoeTest$class)
+
+
+tictactoeM3R5 <-train(class ~middlemiddlesquare+middleleftsquare+middlerightsquare+bottomleftsquare+toprightsquare, data = tictactoeTrain, method = "knn")
+tictactoeM3TestPrediction34 <- predict(tictactoeM3R5, tictactoeTest)
+confusionMatrix(tictactoeM3TestPrediction34, tictactoeTest$class)
+
+
+tictactoeM4R5 <-train(class ~ middlemiddlesquare+middleleftsquare+middlerightsquare+bottomleftsquare+bottommiddlesquare, data = tictactoeTrain, method = "knn")
+tictactoeM4TestPrediction35 <- predict(tictactoeM4R5, tictactoeTest)
+confusionMatrix(tictactoeM4TestPrediction35, tictactoeTest$class)
+
+
+tictactoeM5R5 <-train(class ~ middlemiddlesquare+middleleftsquare+middlerightsquare+bottomleftsquare+bottomrightsquare, data = tictactoeTrain, method = "knn")
+tictactoeM5TestPrediction36 <- predict(tictactoeM5R5, tictactoeTest)
+confusionMatrix(tictactoeM5TestPrediction36, tictactoeTest$class)
+
+--heat map comparision
+
+tictactoeTest <-mutate(tictactoeTest, predmodel5 = predict(tictactoeM3R5, tictactoeTest))
+
+Predictedtype6 <- tictactoeTest %>% group_by(class,predmodel5) %>% summarise(count = n())
+ggplot(data = Predictedtype6, mapping = aes(x=class, y = predmodel5))+ geom_tile(mapping = aes(fill=count), colour = "white") + scale_fill_gradient(low = "white", high = "steelblue")
+
+
+
+
+--Round 6 
+
+tictactoeM1R6 <-train(class ~ middlemiddlesquare+middleleftsquare+middlerightsquare+bottomleftsquare+toprightsquare+topmiddlesquare, data = tictactoeTrain, method = "knn")
+tictactoeM1TestPrediction37 <- predict(tictactoeM1R6, tictactoeTest)
+confusionMatrix(tictactoeM1TestPrediction37, tictactoeTest$class)
+
+tictactoeM2R6 <-train(class ~ middlemiddlesquare+middleleftsquare+middlerightsquare+bottomleftsquare+toprightsquare+topleftsquare, data = tictactoeTrain, method = "knn")
+tictactoeM2TestPrediction38 <- predict(tictactoeM2R6, tictactoeTest)
+confusionMatrix(tictactoeM2TestPrediction38, tictactoeTest$class)
+
+tictactoeM3R6 <-train(class ~ middlemiddlesquare+middleleftsquare+middlerightsquare+bottomleftsquare+toprightsquare+bottomrightsquare, data = tictactoeTrain, method = "knn")
+tictactoeM3TestPrediction39 <- predict(tictactoeM3R6, tictactoeTest)
+confusionMatrix(tictactoeM3TestPrediction39, tictactoeTest$class)
+
+tictactoeM4R6 <-train(class ~ middlemiddlesquare+middleleftsquare+middlerightsquare+bottomleftsquare+toprightsquare+bottommiddlesquare, data = tictactoeTrain, method = "knn")
+tictactoeM4TestPrediction40 <- predict(tictactoeM4R6, tictactoeTest)
+confusionMatrix(tictactoeM4TestPrediction40, tictactoeTest$class)
+
+
+--heat map comparision
+
+tictactoeTest <-mutate(tictactoeTest, predmodel6 = predict(tictactoeM3R6, tictactoeTest))
+
+Predictedtype7 <- tictactoeTest %>% group_by(class,predmodel6) %>% summarise(count = n())
+ggplot(data = Predictedtype7, mapping = aes(x=class, y = predmodel6))+ geom_tile(mapping = aes(fill=count), colour = "white") + scale_fill_gradient(low = "white", high = "steelblue")
+
+
+--round 7
+
+tictactoeM1R7 <-train(class ~ middlemiddlesquare+middleleftsquare+middlerightsquare+bottomleftsquare+toprightsquare+bottomrightsquare+topmiddlesquare, data = tictactoeTrain, method = "knn")
+tictactoeM1TestPrediction41 <- predict(tictactoeM1R7, tictactoeTest)
+confusionMatrix(tictactoeM1TestPrediction41, tictactoeTest$class)
+
+
+tictactoeM2R7 <-train(class ~ middlemiddlesquare+middleleftsquare+middlerightsquare+bottomleftsquare+toprightsquare+bottomrightsquare+topleftsquare, data = tictactoeTrain, method = "knn")
+tictactoeM2TestPrediction42 <- predict(tictactoeM2R7, tictactoeTest)
+confusionMatrix(tictactoeM2TestPrediction42, tictactoeTest$class)
+
+
+tictactoeM3R7 <-train(class ~ middlemiddlesquare+middleleftsquare+middlerightsquare+bottomleftsquare+toprightsquare+bottomrightsquare+bottommiddlesquare, data = tictactoeTrain, method = "knn")
+tictactoeM3TestPrediction43 <- predict(tictactoeM3R7, tictactoeTest)
+confusionMatrix(tictactoeM3TestPrediction43, tictactoeTest$class)
+
+--heat map comparision
+
+tictactoeTest <-mutate(tictactoeTest, predmodel7 = predict(tictactoeM2R7, tictactoeTest))
+
+Predictedtype8 <- tictactoeTest %>% group_by(class,predmodel7) %>% summarise(count = n())
+ggplot(data = Predictedtype8, mapping = aes(x=class, y = predmodel7))+ geom_tile(mapping = aes(fill=count), colour = "white") + scale_fill_gradient(low = "white", high = "steelblue")
+
+
+
+--round 8
+
+tictactoeM1R8 <-train(class ~ middlemiddlesquare+middleleftsquare+middlerightsquare+bottomleftsquare+toprightsquare+bottomrightsquare+topleftsquare+topmiddlesquare, data = tictactoeTrain, method = "knn")
+tictactoeM1TestPrediction44 <- predict(tictactoeM1R8, tictactoeTest)
+confusionMatrix(tictactoeM1TestPrediction44, tictactoeTest$class)
+
+tictactoeM2R8 <-train(class ~ middlemiddlesquare+middleleftsquare+middlerightsquare+bottomleftsquare+toprightsquare+bottomrightsquare+topleftsquare+bottommiddlesquare, data = tictactoeTrain, method = "knn")
+tictactoeM2TestPrediction45 <- predict(tictactoeM2R8, tictactoeTest)
+confusionMatrix(tictactoeM2TestPrediction45, tictactoeTest$class)
+
+
+--heat map comparision
+
+tictactoeTest <-mutate(tictactoeTest, predmodel8 = predict(tictactoeM1R8, tictactoeTest))
+
+Predictedtype9 <- tictactoeTest %>% group_by(class,predmodel8) %>% summarise(count = n())
+ggplot(data = Predictedtype9, mapping = aes(x=class, y = predmodel8))+ geom_tile(mapping = aes(fill=count), colour = "white") + scale_fill_gradient(low = "white", high = "steelblue")
+
+--round9
+
+tictactoeM1R9 <-train(class ~ middlemiddlesquare+middleleftsquare+middlerightsquare+bottomleftsquare+toprightsquare+bottomrightsquare+topleftsquare+topmiddlesquare+bottommiddlesquare, data = tictactoeTrain, method = "knn")
+tictactoeM1TestPrediction46 <- predict(tictactoeM1R9, tictactoeTest)
+confusionMatrix(tictactoeM1TestPrediction46, tictactoeTest$class)
+
+--heat map comparision
+
+tictactoeTest <-mutate(tictactoeTest, predmodel9 = predict(tictactoeM1R9, tictactoeTest))
+
+Predictedtype10 <- tictactoeTest %>% group_by(class,predmodel9) %>% summarise(count = n())
+ggplot(data = Predictedtype10, mapping = aes(x=class, y = predmodel9))+ geom_tile(mapping = aes(fill=count), colour = "white") + scale_fill_gradient(low = "white", high = "steelblue")
+
+
+
+
+library(rpart)
+library(prp)
+
+tictactoe.tree <- rpart(class ~ middlemiddlesquare + middleleftsquare + middlerightsquare + topleftsquare + topmiddlesquare + toprightsquare + bottommiddlesquare + bottomrightsquare + bottomleftsquare, 
+                tictactoeTrain, method="class")
+   
+tictactoe.tree
+
+
+
+
+prp(tictactoe.tree, type = 2, extra = "auto",nn = TRUE, branch = 1, varlen=0, yesno=2, cex =.39)
+
+summary(tictactoeTrain)
+
+                
+---                iris.tree <- rpart(species ~ sepal.length + sepal.width ---+ petal.length + petal.width, 
+---                iris.uci, method="anova", cex = .05)
+
+
+
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your c?rsor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, a? HTML file containing the code and output will be save? alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Pre?iew* does not run any R code chunks. Instead, the outp?t of the chunk when it was last run in the editor is displayed.
