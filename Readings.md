@@ -23,7 +23,7 @@ Link: https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/2
 Link: https://pdfs.semanticscholar.org/2b26/2968529c25ebc2647f58cbb50a46fffcce17.pdf
 
 4. Deconstructing statistical questions  
-Link: https://www.jstor.org/stable/pdf/2983526.pdf?casa_token=jGGz3LRnirAAAAAA:HvIXojFXbpqZSYqYB4dH9B3278j_VkNWiamEYSyL8CPwP8FzORgYPo3bIoIxPxchXX7p8Tj8BwlBPaKTxMQA8eUBWYcM6O4w0A5oaYYiVMuAs4E1uN-I5Q 
+Link: https://www.jstor.org/stable/pdf/2983526.pdf?casa_token=jGGz3LRnirAAAAAA:HvIXojFXbpqZSYqYB4dH9B3278j_VkNWiamEYSyL8CPwP8FzORgYPo3bIoIxPxchXX7p8Tj8BwlBPaKTxMQA8eUBWYcM6O4w0A5oaYYiVMuAs4E1uN-I5Q
 
 
 # September 13
@@ -94,3 +94,16 @@ Link: https://arxiv.org/pdf/1606.03490.pdf
 
 4. Towards a rigorous science of interpretable machine learning  
 Link: https://arxiv.org/pdf/1702.08608.pdf
+
+# November 1
+1. Turkers, Scholars, "Arafat" and "Peace": Cultural Communities and Algorithmic Gold Standards.  
+Link: https://dl.acm.org/citation.cfm?id=2675285
+
+2. Bias and reciprocity in online reviews: Evidence from field experiments on airbnb
+Link: https://dl.acm.org/citation.cfm?id=2764528
+
+3. The Roots of Bias on Uber
+Link: https://arxiv.org/abs/1803.08579
+
+4. Evaluating Amazon's Mechanical Turk as a tool for experimental behavioral research  
+Link: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0057410
