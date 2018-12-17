@@ -1,0 +1,645 @@
+Neighborhood,Decade,Education,Number of People,Percent of Population
+Allston,1950,less than High School,4592,43.44%
+Allston,1950,High School or GED,3848,36.40%
+Allston,1950,Some College or Associate's Degree,841,7.96%
+Allston,1950,Bachelor's Degree or Higher,1289,12.19%
+Allston,1960,less than High School,4357,48.43%
+Allston,1960,High School or GED,2667,29.64%
+Allston,1960,Some College or Associate's Degree,798,8.87%
+Allston,1960,Bachelor's Degree or Higher,1175,13.06%
+Allston,1970,less than High School,2511,37.63%
+Allston,1970,High School or GED,2117,31.73%
+Allston,1970,Some College or Associate's Degree,797,11.95%
+Allston,1970,Bachelor's Degree or Higher,1247,18.69%
+Allston,1980,less than High School,1540,20.57%
+Allston,1980,High School or GED,1942,25.94%
+Allston,1980,Some College or Associate's Degree,1325,17.70%
+Allston,1980,Bachelor's Degree or Higher,2680,35.80%
+Allston,1990,less than High School,1688,17.96%
+Allston,1990,High School or GED,1407,14.97%
+Allston,1990,Some College or Associate's Degree,1260,13.41%
+Allston,1990,Bachelor's Degree or Higher,5044,53.67%
+Allston,2000,less than High School,1603,17.91%
+Allston,2000,High School or GED,1503,16.79%
+Allston,2000,Some College or Associate's Degree,1128,12.60%
+Allston,2000,Bachelor's Degree or Higher,4716,52.69%
+Allston,2010,less than High School,-,
+Allston,2010,High School or GED,-,
+Allston,2010,Some College or Associate's Degree,-,
+Allston,2010,Bachelor's Degree or Higher,-,
+Back Bay,1950,less than High School,4735,32.87%
+Back Bay,1950,High School or GED,4445,30.86%
+Back Bay,1950,Some College or Associate's Degree,2355,16.35%
+Back Bay,1950,Bachelor's Degree or Higher,2870,19.92%
+Back Bay,1960,less than High School,3823,30.44%
+Back Bay,1960,High School or GED,3049,24.28%
+Back Bay,1960,Some College or Associate's Degree,2236,17.81%
+Back Bay,1960,Bachelor's Degree or Higher,3450,27.47%
+Back Bay,1970,less than High School,1649,16.83%
+Back Bay,1970,High School or GED,2630,26.84%
+Back Bay,1970,Some College or Associate's Degree,1914,19.53%
+Back Bay,1970,Bachelor's Degree or Higher,3606,36.80%
+Back Bay,1980,less than High School,831,6.90%
+Back Bay,1980,High School or GED,1675,13.92%
+Back Bay,1980,Some College or Associate's Degree,2111,17.54%
+Back Bay,1980,Bachelor's Degree or Higher,7420,61.64%
+Back Bay,1990,less than High School,407,3.50%
+Back Bay,1990,High School or GED,751,6.45%
+Back Bay,1990,Some College or Associate's Degree,1788,15.36%
+Back Bay,1990,Bachelor's Degree or Higher,8698,74.70%
+Back Bay,2000,less than High School,337,2.72%
+Back Bay,2000,High School or GED,717,5.79%
+Back Bay,2000,Some College or Associate's Degree,1287,10.39%
+Back Bay,2000,Bachelor's Degree or Higher,10051,81.11%
+Back Bay,2010,less than High School,-,
+Back Bay,2010,High School or GED,-,
+Back Bay,2010,Some College or Associate's Degree,-,
+Back Bay,2010,Bachelor's Degree or Higher,-,
+Beacon Hill,1950,less than High School,3925,39.25%
+Beacon Hill,1950,High School or GED,2787,27.87%
+Beacon Hill,1950,Some College or Associate's Degree,1278,12.78%
+Beacon Hill,1950,Bachelor's Degree or Higher,2010,20.10%
+Beacon Hill,1960,less than High School,3049,34.64%
+Beacon Hill,1960,High School or GED,1733,19.69%
+Beacon Hill,1960,Some College or Associate's Degree,1327,15.07%
+Beacon Hill,1960,Bachelor's Degree or Higher,2694,30.60%
+Beacon Hill,1970,less than High School,1265,18.47%
+Beacon Hill,1970,High School or GED,1465,21.39%
+Beacon Hill,1970,Some College or Associate's Degree,1154,16.85%
+Beacon Hill,1970,Bachelor's Degree or Higher,2965,43.29%
+Beacon Hill,1980,less than High School,431,5.63%
+Beacon Hill,1980,High School or GED,963,12.58%
+Beacon Hill,1980,Some College or Associate's Degree,1577,20.61%
+Beacon Hill,1980,Bachelor's Degree or Higher,4682,61.18%
+Beacon Hill,1990,less than High School,248,3.50%
+Beacon Hill,1990,High School or GED,403,5.69%
+Beacon Hill,1990,Some College or Associate's Degree,968,13.66%
+Beacon Hill,1990,Bachelor's Degree or Higher,5466,77.15%
+Beacon Hill,2000,less than High School,226,3.02%
+Beacon Hill,2000,High School or GED,405,5.41%
+Beacon Hill,2000,Some College or Associate's Degree,943,12.60%
+Beacon Hill,2000,Bachelor's Degree or Higher,5910,78.97%
+Beacon Hill,2010,less than High School,-,
+Beacon Hill,2010,High School or GED,-,
+Beacon Hill,2010,Some College or Associate's Degree,-,
+Beacon Hill,2010,Bachelor's Degree or Higher,-,
+Brighton,1950,less than High School,14115,42.54%
+Brighton,1950,High School or GED,12510,37.70%
+Brighton,1950,Some College or Associate's Degree,3018,9.10%
+Brighton,1950,Bachelor's Degree or Higher,3540,10.67%
+Brighton,1960,less than High School,13735,42.39%
+Brighton,1960,High School or GED,11135,34.37%
+Brighton,1960,Some College or Associate's Degree,3771,11.64%
+Brighton,1960,Bachelor's Degree or Higher,3760,11.60%
+Brighton,1970,less than High School,10290,35.83%
+Brighton,1970,High School or GED,9989,34.79%
+Brighton,1970,Some College or Associate's Degree,3501,12.19%
+Brighton,1970,Bachelor's Degree or Higher,4935,17.19%
+Brighton,1980,less than High School,6427,21.66%
+Brighton,1980,High School or GED,9298,31.34%
+Brighton,1980,Some College or Associate's Degree,4374,14.74%
+Brighton,1980,Bachelor's Degree or Higher,9569,32.25%
+Brighton,1990,less than High School,5283,15.57%
+Brighton,1990,High School or GED,7104,20.94%
+Brighton,1990,Some College or Associate's Degree,5891,17.36%
+Brighton,1990,Bachelor's Degree or Higher,15651,46.13%
+Brighton,2000,less than High School,4180,12.41%
+Brighton,2000,High School or GED,5870,17.42%
+Brighton,2000,Some College or Associate's Degree,5252,15.59%
+Brighton,2000,Bachelor's Degree or Higher,18391,54.58%
+Brighton,2010,less than High School,-,
+Brighton,2010,High School or GED,-,
+Brighton,2010,Some College or Associate's Degree,-,
+Brighton,2010,Bachelor's Degree or Higher,-,
+Charlestown,1950,less than High School,10595,66.20%
+Charlestown,1950,High School or GED,4490,28.05%
+Charlestown,1950,Some College or Associate's Degree,545,3.41%
+Charlestown,1950,Bachelor's Degree or Higher,375,2.34%
+Charlestown,1960,less than High School,7238,66.48%
+Charlestown,1960,High School or GED,3074,28.23%
+Charlestown,1960,Some College or Associate's Degree,289,2.65%
+Charlestown,1960,Bachelor's Degree or Higher,287,2.64%
+Charlestown,1970,less than High School,4549,54.87%
+Charlestown,1970,High School or GED,3036,36.62%
+Charlestown,1970,Some College or Associate's Degree,382,4.61%
+Charlestown,1970,Bachelor's Degree or Higher,324,3.91%
+Charlestown,1980,less than High School,2999,36.07%
+Charlestown,1980,High School or GED,3239,38.96%
+Charlestown,1980,Some College or Associate's Degree,846,10.18%
+Charlestown,1980,Bachelor's Degree or Higher,1230,14.79%
+Charlestown,1990,less than High School,1751,16.78%
+Charlestown,1990,High School or GED,2744,26.29%
+Charlestown,1990,Some College or Associate's Degree,1817,17.41%
+Charlestown,1990,Bachelor's Degree or Higher,4124,39.52%
+Charlestown,2000,less than High School,1466,12.87%
+Charlestown,2000,High School or GED,2341,20.55%
+Charlestown,2000,Some College or Associate's Degree,1767,15.51%
+Charlestown,2000,Bachelor's Degree or Higher,5820,51.08%
+Charlestown,2010,less than High School,-,
+Charlestown,2010,High School or GED,-,
+Charlestown,2010,Some College or Associate's Degree,-,
+Charlestown,2010,Bachelor's Degree or Higher,-,
+Dorchester,1950,less than High School,53699,54.43%
+Dorchester,1950,High School or GED,33561,34.02%
+Dorchester,1950,Some College or Associate's Degree,6028,6.11%
+Dorchester,1950,Bachelor's Degree or Higher,5367,5.44%
+Dorchester,1960,less than High School,49999,56.01%
+Dorchester,1960,High School or GED,29829,33.41%
+Dorchester,1960,Some College or Associate's Degree,5340,5.98%
+Dorchester,1960,Bachelor's Degree or Higher,4106,4.60%
+Dorchester,1970,less than High School,37321,50.60%
+Dorchester,1970,High School or GED,27999,37.96%
+Dorchester,1970,Some College or Associate's Degree,5182,7.03%
+Dorchester,1970,Bachelor's Degree or Higher,3260,4.42%
+Dorchester,1980,less than High School,22172,37.52%
+Dorchester,1980,High School or GED,24510,41.48%
+Dorchester,1980,Some College or Associate's Degree,6956,11.77%
+Dorchester,1980,Bachelor's Degree or Higher,5448,9.22%
+Dorchester,1990,less than High School,21011,31.37%
+Dorchester,1990,High School or GED,22206,33.15%
+Dorchester,1990,Some College or Associate's Degree,13294,19.85%
+Dorchester,1990,Bachelor's Degree or Higher,10469,15.63%
+Dorchester,2000,less than High School,20297,28.71%
+Dorchester,2000,High School or GED,21891,30.97%
+Dorchester,2000,Some College or Associate's Degree,16152,22.85%
+Dorchester,2000,Bachelor's Degree or Higher,12352,17.47%
+Dorchester,2010,less than High School,-,
+Dorchester,2010,High School or GED,-,
+Dorchester,2010,Some College or Associate's Degree,-,
+Dorchester,2010,Bachelor's Degree or Higher,-,
+Downtown,1950,less than High School,3085,72.08%
+Downtown,1950,High School or GED,670,15.65%
+Downtown,1950,Some College or Associate's Degree,253,5.91%
+Downtown,1950,Bachelor's Degree or Higher,272,6.36%
+Downtown,1960,less than High School,2743,69.09%
+Downtown,1960,High School or GED,506,12.75%
+Downtown,1960,Some College or Associate's Degree,329,8.29%
+Downtown,1960,Bachelor's Degree or Higher,392,9.87%
+Downtown,1970,less than High School,985,39.56%
+Downtown,1970,High School or GED,658,26.43%
+Downtown,1970,Some College or Associate's Degree,330,13.25%
+Downtown,1970,Bachelor's Degree or Higher,517,20.76%
+Downtown,1980,less than High School,2102,33.72%
+Downtown,1980,High School or GED,1230,19.73%
+Downtown,1980,Some College or Associate's Degree,815,13.08%
+Downtown,1980,Bachelor's Degree or Higher,2086,33.47%
+Downtown,1990,less than High School,2139,30.73%
+Downtown,1990,High School or GED,1144,16.43%
+Downtown,1990,Some College or Associate's Degree,1035,14.87%
+Downtown,1990,Bachelor's Degree or Higher,2643,37.97%
+Downtown,2000,less than High School,2789,33.88%
+Downtown,2000,High School or GED,1150,13.97%
+Downtown,2000,Some College or Associate's Degree,844,10.25%
+Downtown,2000,Bachelor's Degree or Higher,3450,41.90%
+Downtown,2010,less than High School,-,
+Downtown,2010,High School or GED,-,
+Downtown,2010,Some College or Associate's Degree,-,
+Downtown,2010,Bachelor's Degree or Higher,-,
+East Boston,1950,less than High School,20945,73.76%
+East Boston,1950,High School or GED,5990,21.10%
+East Boston,1950,Some College or Associate's Degree,860,3.03%
+East Boston,1950,Bachelor's Degree or Higher,600,2.11%
+East Boston,1960,less than High School,18378,71.31%
+East Boston,1960,High School or GED,6108,23.70%
+East Boston,1960,Some College or Associate's Degree,732,2.84%
+East Boston,1960,Bachelor's Degree or Higher,553,2.15%
+East Boston,1970,less than High School,14441,64.41%
+East Boston,1970,High School or GED,6364,28.39%
+East Boston,1970,Some College or Associate's Degree,1040,4.64%
+East Boston,1970,Bachelor's Degree or Higher,575,2.56%
+East Boston,1980,less than High School,10752,51.64%
+East Boston,1980,High School or GED,7662,36.80%
+East Boston,1980,Some College or Associate's Degree,1408,6.76%
+East Boston,1980,Bachelor's Degree or Higher,1001,4.81%
+East Boston,1990,less than High School,9055,40.76%
+East Boston,1990,High School or GED,7755,34.91%
+East Boston,1990,Some College or Associate's Degree,3411,15.36%
+East Boston,1990,Bachelor's Degree or Higher,1992,8.97%
+East Boston,2000,less than High School,10009,40.33%
+East Boston,2000,High School or GED,8265,33.30%
+East Boston,2000,Some College or Associate's Degree,3954,15.93%
+East Boston,2000,Bachelor's Degree or Higher,2591,10.44%
+East Boston,2010,less than High School,-,
+East Boston,2010,High School or GED,-,
+East Boston,2010,Some College or Associate's Degree,-,
+East Boston,2010,Bachelor's Degree or Higher,-,
+Fenway,1950,less than High School,5814,33.32%
+Fenway,1950,High School or GED,6272,35.94%
+Fenway,1950,Some College or Associate's Degree,2745,15.73%
+Fenway,1950,Bachelor's Degree or Higher,2620,15.01%
+Fenway,1960,less than High School,5658,38.14%
+Fenway,1960,High School or GED,3832,25.83%
+Fenway,1960,Some College or Associate's Degree,2289,15.43%
+Fenway,1960,Bachelor's Degree or Higher,3056,20.60%
+Fenway,1970,less than High School,2759,28.80%
+Fenway,1970,High School or GED,2919,30.47%
+Fenway,1970,Some College or Associate's Degree,1576,16.45%
+Fenway,1970,Bachelor's Degree or Higher,2327,24.29%
+Fenway,1980,less than High School,1246,13.67%
+Fenway,1980,High School or GED,1842,20.21%
+Fenway,1980,Some College or Associate's Degree,2000,21.94%
+Fenway,1980,Bachelor's Degree or Higher,4027,44.18%
+Fenway,1990,less than High School,1102,10.28%
+Fenway,1990,High School or GED,1332,12.43%
+Fenway,1990,Some College or Associate's Degree,2409,22.48%
+Fenway,1990,Bachelor's Degree or Higher,5874,54.81%
+Fenway,2000,less than High School,938,8.41%
+Fenway,2000,High School or GED,1094,9.80%
+Fenway,2000,Some College or Associate's Degree,1718,15.39%
+Fenway,2000,Bachelor's Degree or Higher,7410,66.40%
+Fenway,2010,less than High School,-,
+Fenway,2010,High School or GED,-,
+Fenway,2010,Some College or Associate's Degree,-,
+Fenway,2010,Bachelor's Degree or Higher,-,
+Harbor Islands,1950,less than High School,535,75.35%
+Harbor Islands,1950,High School or GED,105,14.79%
+Harbor Islands,1950,Some College or Associate's Degree,60,8.45%
+Harbor Islands,1950,Bachelor's Degree or Higher,10,1.41%
+Harbor Islands,1960,less than High School,1038,67.23%
+Harbor Islands,1960,High School or GED,399,25.84%
+Harbor Islands,1960,Some College or Associate's Degree,71,4.60%
+Harbor Islands,1960,Bachelor's Degree or Higher,36,2.33%
+Harbor Islands,1970,less than High School,782,83.91%
+Harbor Islands,1970,High School or GED,85,9.12%
+Harbor Islands,1970,Some College or Associate's Degree,38,4.08%
+Harbor Islands,1970,Bachelor's Degree or Higher,27,2.90%
+Harbor Islands,1980,less than High School,59,16.91%
+Harbor Islands,1980,High School or GED,107,30.66%
+Harbor Islands,1980,Some College or Associate's Degree,22,6.30%
+Harbor Islands,1980,Bachelor's Degree or Higher,161,46.13%
+Harbor Islands,1990,less than High School,623,64.56%
+Harbor Islands,1990,High School or GED,232,24.04%
+Harbor Islands,1990,Some College or Associate's Degree,83,8.60%
+Harbor Islands,1990,Bachelor's Degree or Higher,27,2.80%
+Harbor Islands,2000,less than High School,285,45.53%
+Harbor Islands,2000,High School or GED,168,26.84%
+Harbor Islands,2000,Some College or Associate's Degree,133,21.25%
+Harbor Islands,2000,Bachelor's Degree or Higher,40,6.39%
+Harbor Islands,2010,less than High School,-,
+Harbor Islands,2010,High School or GED,-,
+Harbor Islands,2010,Some College or Associate's Degree,-,
+Harbor Islands,2010,Bachelor's Degree or Higher,-,
+Hyde Park,1950,less than High School,8227,53.97%
+Hyde Park,1950,High School or GED,4952,32.48%
+Hyde Park,1950,Some College or Associate's Degree,1196,7.85%
+Hyde Park,1950,Bachelor's Degree or Higher,869,5.70%
+Hyde Park,1960,less than High School,8209,49.07%
+Hyde Park,1960,High School or GED,6300,37.66%
+Hyde Park,1960,Some College or Associate's Degree,1323,7.91%
+Hyde Park,1960,Bachelor's Degree or Higher,896,5.36%
+Hyde Park,1970,less than High School,7919,39.51%
+Hyde Park,1970,High School or GED,8848,44.15%
+Hyde Park,1970,Some College or Associate's Degree,1780,8.88%
+Hyde Park,1970,Bachelor's Degree or Higher,1494,7.45%
+Hyde Park,1980,less than High School,5723,30.54%
+Hyde Park,1980,High School or GED,8369,44.65%
+Hyde Park,1980,Some College or Associate's Degree,2538,13.54%
+Hyde Park,1980,Bachelor's Degree or Higher,2112,11.27%
+Hyde Park,1990,less than High School,4273,20.95%
+Hyde Park,1990,High School or GED,7515,36.84%
+Hyde Park,1990,Some College or Associate's Degree,4706,23.07%
+Hyde Park,1990,Bachelor's Degree or Higher,3907,19.15%
+Hyde Park,2000,less than High School,4105,19.60%
+Hyde Park,2000,High School or GED,6828,32.60%
+Hyde Park,2000,Some College or Associate's Degree,5736,27.39%
+Hyde Park,2000,Bachelor's Degree or Higher,4273,20.40%
+Hyde Park,2010,less than High School,-,
+Hyde Park,2010,High School or GED,-,
+Hyde Park,2010,Some College or Associate's Degree,-,
+Hyde Park,2010,Bachelor's Degree or Higher,-,
+Jamaica Plain,1950,less than High School,15427,52.73%
+Jamaica Plain,1950,High School or GED,9928,33.93%
+Jamaica Plain,1950,Some College or Associate's Degree,1835,6.27%
+Jamaica Plain,1950,Bachelor's Degree or Higher,2068,7.07%
+Jamaica Plain,1960,less than High School,17545,56.12%
+Jamaica Plain,1960,High School or GED,8977,28.71%
+Jamaica Plain,1960,Some College or Associate's Degree,2530,8.09%
+Jamaica Plain,1960,Bachelor's Degree or Higher,2213,7.08%
+Jamaica Plain,1970,less than High School,13333,50.54%
+Jamaica Plain,1970,High School or GED,8309,31.49%
+Jamaica Plain,1970,Some College or Associate's Degree,2148,8.14%
+Jamaica Plain,1970,Bachelor's Degree or Higher,2592,9.82%
+Jamaica Plain,1980,less than High School,7530,33.71%
+Jamaica Plain,1980,High School or GED,6943,31.08%
+Jamaica Plain,1980,Some College or Associate's Degree,2673,11.97%
+Jamaica Plain,1980,Bachelor's Degree or Higher,5193,23.25%
+Jamaica Plain,1990,less than High School,6007,24.04%
+Jamaica Plain,1990,High School or GED,5093,20.38%
+Jamaica Plain,1990,Some College or Associate's Degree,4559,18.25%
+Jamaica Plain,1990,Bachelor's Degree or Higher,9327,37.33%
+Jamaica Plain,2000,less than High School,4568,18.44%
+Jamaica Plain,2000,High School or GED,4395,17.74%
+Jamaica Plain,2000,Some College or Associate's Degree,4668,18.85%
+Jamaica Plain,2000,Bachelor's Degree or Higher,11137,44.97%
+Jamaica Plain,2010,less than High School,-,
+Jamaica Plain,2010,High School or GED,-,
+Jamaica Plain,2010,Some College or Associate's Degree,-,
+Jamaica Plain,2010,Bachelor's Degree or Higher,-,
+Longwood Medical Area,1950,less than High School,535,36.44%
+Longwood Medical Area,1950,High School or GED,417,28.41%
+Longwood Medical Area,1950,Some College or Associate's Degree,173,11.78%
+Longwood Medical Area,1950,Bachelor's Degree or Higher,343,23.37%
+Longwood Medical Area,1960,less than High School,725,48.08%
+Longwood Medical Area,1960,High School or GED,392,25.99%
+Longwood Medical Area,1960,Some College or Associate's Degree,197,13.06%
+Longwood Medical Area,1960,Bachelor's Degree or Higher,194,12.86%
+Longwood Medical Area,1970,less than High School,269,30.43%
+Longwood Medical Area,1970,High School or GED,177,20.02%
+Longwood Medical Area,1970,Some College or Associate's Degree,179,20.25%
+Longwood Medical Area,1970,Bachelor's Degree or Higher,259,29.30%
+Longwood Medical Area,1980,less than High School,161,29.49%
+Longwood Medical Area,1980,High School or GED,154,28.21%
+Longwood Medical Area,1980,Some College or Associate's Degree,95,17.40%
+Longwood Medical Area,1980,Bachelor's Degree or Higher,136,24.91%
+Longwood Medical Area,1990,less than High School,188,27.93%
+Longwood Medical Area,1990,High School or GED,166,24.67%
+Longwood Medical Area,1990,Some College or Associate's Degree,141,20.95%
+Longwood Medical Area,1990,Bachelor's Degree or Higher,178,26.45%
+Longwood Medical Area,2000,less than High School,201,30.73%
+Longwood Medical Area,2000,High School or GED,140,21.41%
+Longwood Medical Area,2000,Some College or Associate's Degree,85,13.00%
+Longwood Medical Area,2000,Bachelor's Degree or Higher,228,34.86%
+Longwood Medical Area,2010,less than High School,-,
+Longwood Medical Area,2010,High School or GED,-,
+Longwood Medical Area,2010,Some College or Associate's Degree,-,
+Longwood Medical Area,2010,Bachelor's Degree or Higher,-,
+Mattapan,1950,less than High School,7226,49.77%
+Mattapan,1950,High School or GED,5140,35.40%
+Mattapan,1950,Some College or Associate's Degree,1583,10.90%
+Mattapan,1950,Bachelor's Degree or Higher,569,3.92%
+Mattapan,1960,less than High School,7104,46.19%
+Mattapan,1960,High School or GED,5967,38.80%
+Mattapan,1960,Some College or Associate's Degree,1286,8.36%
+Mattapan,1960,Bachelor's Degree or Higher,1023,6.65%
+Mattapan,1970,less than High School,6630,42.69%
+Mattapan,1970,High School or GED,6453,41.55%
+Mattapan,1970,Some College or Associate's Degree,1354,8.72%
+Mattapan,1970,Bachelor's Degree or Higher,1092,7.03%
+Mattapan,1980,less than High School,3505,27.37%
+Mattapan,1980,High School or GED,5905,46.11%
+Mattapan,1980,Some College or Associate's Degree,2066,16.13%
+Mattapan,1980,Bachelor's Degree or Higher,1331,10.39%
+Mattapan,1990,less than High School,3848,26.02%
+Mattapan,1990,High School or GED,4720,31.92%
+Mattapan,1990,Some College or Associate's Degree,4149,28.06%
+Mattapan,1990,Bachelor's Degree or Higher,2071,14.00%
+Mattapan,2000,less than High School,3478,23.56%
+Mattapan,2000,High School or GED,4567,30.94%
+Mattapan,2000,Some College or Associate's Degree,4212,28.53%
+Mattapan,2000,Bachelor's Degree or Higher,2506,16.97%
+Mattapan,2010,less than High School,-,
+Mattapan,2010,High School or GED,-,
+Mattapan,2010,Some College or Associate's Degree,-,
+Mattapan,2010,Bachelor's Degree or Higher,-,
+Mission Hill ,1950,less than High School,7175,56.47%
+Mission Hill ,1950,High School or GED,3880,30.54%
+Mission Hill ,1950,Some College or Associate's Degree,805,6.34%
+Mission Hill ,1950,Bachelor's Degree or Higher,846,6.66%
+Mission Hill ,1960,less than High School,6029,56.18%
+Mission Hill ,1960,High School or GED,2905,27.07%
+Mission Hill ,1960,Some College or Associate's Degree,940,8.76%
+Mission Hill ,1960,Bachelor's Degree or Higher,857,7.99%
+Mission Hill ,1970,less than High School,3661,45.06%
+Mission Hill ,1970,High School or GED,2242,27.60%
+Mission Hill ,1970,Some College or Associate's Degree,825,10.16%
+Mission Hill ,1970,Bachelor's Degree or Higher,1396,17.18%
+Mission Hill ,1980,less than High School,2225,30.56%
+Mission Hill ,1980,High School or GED,2241,30.78%
+Mission Hill ,1980,Some College or Associate's Degree,1295,17.79%
+Mission Hill ,1980,Bachelor's Degree or Higher,1520,20.88%
+Mission Hill ,1990,less than High School,2676,29.08%
+Mission Hill ,1990,High School or GED,2219,24.11%
+Mission Hill ,1990,Some College or Associate's Degree,1745,18.96%
+Mission Hill ,1990,Bachelor's Degree or Higher,2563,27.85%
+Mission Hill ,2000,less than High School,1940,22.61%
+Mission Hill ,2000,High School or GED,1616,18.83%
+Mission Hill ,2000,Some College or Associate's Degree,1571,18.31%
+Mission Hill ,2000,Bachelor's Degree or Higher,3453,40.24%
+Mission Hill ,2010,less than High School,-,
+Mission Hill ,2010,High School or GED,-,
+Mission Hill ,2010,Some College or Associate's Degree,-,
+Mission Hill ,2010,Bachelor's Degree or Higher,-,
+North End,1950,less than High School,7870,84.25%
+North End,1950,High School or GED,1097,11.74%
+North End,1950,Some College or Associate's Degree,167,1.79%
+North End,1950,Bachelor's Degree or Higher,207,2.22%
+North End,1960,less than High School,6482,78.99%
+North End,1960,High School or GED,1294,15.77%
+North End,1960,Some College or Associate's Degree,208,2.53%
+North End,1960,Bachelor's Degree or Higher,222,2.71%
+North End,1970,less than High School,5029,75.30%
+North End,1970,High School or GED,1126,16.86%
+North End,1970,Some College or Associate's Degree,253,3.79%
+North End,1970,Bachelor's Degree or Higher,271,4.06%
+North End,1980,less than High School,2699,45.48%
+North End,1980,High School or GED,1448,24.40%
+North End,1980,Some College or Associate's Degree,475,8.00%
+North End,1980,Bachelor's Degree or Higher,1313,22.12%
+North End,1990,less than High School,1627,26.14%
+North End,1990,High School or GED,1104,17.74%
+North End,1990,Some College or Associate's Degree,1072,17.23%
+North End,1990,Bachelor's Degree or Higher,2420,38.89%
+North End,2000,less than High School,783,11.80%
+North End,2000,High School or GED,882,13.29%
+North End,2000,Some College or Associate's Degree,880,13.26%
+North End,2000,Bachelor's Degree or Higher,4092,61.65%
+North End,2010,less than High School,-,
+North End,2010,High School or GED,-,
+North End,2010,Some College or Associate's Degree,-,
+North End,2010,Bachelor's Degree or Higher,-,
+Roslindale,1950,less than High School,8638,47.77%
+Roslindale,1950,High School or GED,6707,37.09%
+Roslindale,1950,Some College or Associate's Degree,1479,8.18%
+Roslindale,1950,Bachelor's Degree or Higher,1257,6.95%
+Roslindale,1960,less than High School,8259,46.60%
+Roslindale,1960,High School or GED,6461,36.46%
+Roslindale,1960,Some College or Associate's Degree,1727,9.74%
+Roslindale,1960,Bachelor's Degree or Higher,1276,7.20%
+Roslindale,1970,less than High School,7656,40.96%
+Roslindale,1970,High School or GED,7863,42.07%
+Roslindale,1970,Some College or Associate's Degree,1607,8.60%
+Roslindale,1970,Bachelor's Degree or Higher,1566,8.38%
+Roslindale,1980,less than High School,5389,30.94%
+Roslindale,1980,High School or GED,7553,43.37%
+Roslindale,1980,Some College or Associate's Degree,2100,12.06%
+Roslindale,1980,Bachelor's Degree or Higher,2373,13.63%
+Roslindale,1990,less than High School,3850,20.48%
+Roslindale,1990,High School or GED,6071,32.30%
+Roslindale,1990,Some College or Associate's Degree,4059,21.59%
+Roslindale,1990,Bachelor's Degree or Higher,4817,25.63%
+Roslindale,2000,less than High School,3523,17.96%
+Roslindale,2000,High School or GED,5277,26.90%
+Roslindale,2000,Some College or Associate's Degree,4393,22.40%
+Roslindale,2000,Bachelor's Degree or Higher,6422,32.74%
+Roslindale,2010,less than High School,-,
+Roslindale,2010,High School or GED,-,
+Roslindale,2010,Some College or Associate's Degree,-,
+Roslindale,2010,Bachelor's Degree or Higher,-,
+Roxbury,1950,less than High School,36634,64.41%
+Roxbury,1950,High School or GED,15353,26.99%
+Roxbury,1950,Some College or Associate's Degree,2708,4.76%
+Roxbury,1950,Bachelor's Degree or Higher,2184,3.84%
+Roxbury,1960,less than High School,27603,67.27%
+Roxbury,1960,High School or GED,9621,23.45%
+Roxbury,1960,Some College or Associate's Degree,2205,5.37%
+Roxbury,1960,Bachelor's Degree or Higher,1603,3.91%
+Roxbury,1970,less than High School,14587,57.96%
+Roxbury,1970,High School or GED,7876,31.29%
+Roxbury,1970,Some College or Associate's Degree,1710,6.79%
+Roxbury,1970,Bachelor's Degree or Higher,995,3.95%
+Roxbury,1980,less than High School,10487,45.23%
+Roxbury,1980,High School or GED,8236,35.52%
+Roxbury,1980,Some College or Associate's Degree,2592,11.18%
+Roxbury,1980,Bachelor's Degree or Higher,1871,8.07%
+Roxbury,1990,less than High School,10287,40.88%
+Roxbury,1990,High School or GED,7164,28.47%
+Roxbury,1990,Some College or Associate's Degree,4950,19.67%
+Roxbury,1990,Bachelor's Degree or Higher,2765,10.99%
+Roxbury,2000,less than High School,7889,31.97%
+Roxbury,2000,High School or GED,7954,32.24%
+Roxbury,2000,Some College or Associate's Degree,5617,22.77%
+Roxbury,2000,Bachelor's Degree or Higher,3213,13.02%
+Roxbury,2010,less than High School,-,
+Roxbury,2010,High School or GED,-,
+Roxbury,2010,Some College or Associate's Degree,-,
+Roxbury,2010,Bachelor's Degree or Higher,-,
+South Boston Waterfront,1950,less than High School,920,75.47%
+South Boston Waterfront,1950,High School or GED,272,22.31%
+South Boston Waterfront,1950,Some College or Associate's Degree,11,0.90%
+South Boston Waterfront,1950,Bachelor's Degree or Higher,16,1.31%
+South Boston Waterfront,1960,less than High School,1038,61.93%
+South Boston Waterfront,1960,High School or GED,466,27.80%
+South Boston Waterfront,1960,Some College or Associate's Degree,87,5.19%
+South Boston Waterfront,1960,Bachelor's Degree or Higher,85,5.07%
+South Boston Waterfront,1970,less than High School,393,68.59%
+South Boston Waterfront,1970,High School or GED,141,24.61%
+South Boston Waterfront,1970,Some College or Associate's Degree,11,1.92%
+South Boston Waterfront,1970,Bachelor's Degree or Higher,28,4.89%
+South Boston Waterfront,1980,less than High School,180,48.78%
+South Boston Waterfront,1980,High School or GED,153,41.46%
+South Boston Waterfront,1980,Some College or Associate's Degree,30,8.13%
+South Boston Waterfront,1980,Bachelor's Degree or Higher,6,1.63%
+South Boston Waterfront,1990,less than High School,138,17.62%
+South Boston Waterfront,1990,High School or GED,178,22.73%
+South Boston Waterfront,1990,Some College or Associate's Degree,217,27.71%
+South Boston Waterfront,1990,Bachelor's Degree or Higher,250,31.93%
+South Boston Waterfront,2000,less than High School,153,15.50%
+South Boston Waterfront,2000,High School or GED,213,21.58%
+South Boston Waterfront,2000,Some College or Associate's Degree,190,19.25%
+South Boston Waterfront,2000,Bachelor's Degree or Higher,431,43.67%
+South Boston Waterfront,2010,less than High School,-,
+South Boston Waterfront,2010,High School or GED,-,
+South Boston Waterfront,2010,Some College or Associate's Degree,-,
+South Boston Waterfront,2010,Bachelor's Degree or Higher,-,
+South Boston,1950,less than High School,18154,62.88%
+South Boston,1950,High School or GED,8295,28.73%
+South Boston,1950,Some College or Associate's Degree,1447,5.01%
+South Boston,1950,Bachelor's Degree or Higher,974,3.37%
+South Boston,1960,less than High School,15232,62.97%
+South Boston,1960,High School or GED,7321,30.27%
+South Boston,1960,Some College or Associate's Degree,916,3.79%
+South Boston,1960,Bachelor's Degree or Higher,719,2.97%
+South Boston,1970,less than High School,12063,56.47%
+South Boston,1970,High School or GED,7372,34.51%
+South Boston,1970,Some College or Associate's Degree,955,4.47%
+South Boston,1970,Bachelor's Degree or Higher,972,4.55%
+South Boston,1980,less than High School,7264,38.23%
+South Boston,1980,High School or GED,8695,45.76%
+South Boston,1980,Some College or Associate's Degree,1701,8.95%
+South Boston,1980,Bachelor's Degree or Higher,1342,7.06%
+South Boston,1990,less than High School,5043,25.05%
+South Boston,1990,High School or GED,8205,40.76%
+South Boston,1990,Some College or Associate's Degree,3740,18.58%
+South Boston,1990,Bachelor's Degree or Higher,3144,15.62%
+South Boston,2000,less than High School,3948,18.97%
+South Boston,2000,High School or GED,6836,32.84%
+South Boston,2000,Some College or Associate's Degree,4312,20.72%
+South Boston,2000,Bachelor's Degree or Higher,5719,27.48%
+South Boston,2010,less than High School,-,
+South Boston,2010,High School or GED,-,
+South Boston,2010,Some College or Associate's Degree,-,
+South Boston,2010,Bachelor's Degree or Higher,-,
+South End,1950,less than High School,24591,72.85%
+South End,1950,High School or GED,6270,18.58%
+South End,1950,Some College or Associate's Degree,1522,4.51%
+South End,1950,Bachelor's Degree or Higher,1371,4.06%
+South End,1960,less than High School,16344,72.88%
+South End,1960,High School or GED,3934,17.54%
+South End,1960,Some College or Associate's Degree,1185,5.28%
+South End,1960,Bachelor's Degree or Higher,963,4.29%
+South End,1970,less than High School,8062,56.44%
+South End,1970,High School or GED,3376,23.63%
+South End,1970,Some College or Associate's Degree,1130,7.91%
+South End,1970,Bachelor's Degree or Higher,1717,12.02%
+South End,1980,less than High School,5648,34.04%
+South End,1980,High School or GED,3824,23.05%
+South End,1980,Some College or Associate's Degree,2229,13.43%
+South End,1980,Bachelor's Degree or Higher,4890,29.47%
+South End,1990,less than High School,4388,23.77%
+South End,1990,High School or GED,2446,13.25%
+South End,1990,Some College or Associate's Degree,3369,18.25%
+South End,1990,Bachelor's Degree or Higher,8258,44.73%
+South End,2000,less than High School,3778,18.61%
+South End,2000,High School or GED,2866,14.12%
+South End,2000,Some College or Associate's Degree,2960,14.58%
+South End,2000,Bachelor's Degree or Higher,10697,52.69%
+South End,2010,less than High School,-,
+South End,2010,High School or GED,-,
+South End,2010,Some College or Associate's Degree,-,
+South End,2010,Bachelor's Degree or Higher,-,
+West End,1950,less than High School,5369,71.88%
+West End,1950,High School or GED,1361,18.22%
+West End,1950,Some College or Associate's Degree,378,5.06%
+West End,1950,Bachelor's Degree or Higher,361,4.83%
+West End,1960,less than High School,848,66.77%
+West End,1960,High School or GED,232,18.27%
+West End,1960,Some College or Associate's Degree,75,5.91%
+West End,1960,Bachelor's Degree or Higher,115,9.06%
+West End,1970,less than High School,596,25.86%
+West End,1970,High School or GED,509,22.08%
+West End,1970,Some College or Associate's Degree,318,13.80%
+West End,1970,Bachelor's Degree or Higher,882,38.26%
+West End,1980,less than High School,351,10.35%
+West End,1980,High School or GED,637,18.79%
+West End,1980,Some College or Associate's Degree,654,19.29%
+West End,1980,Bachelor's Degree or Higher,1749,51.58%
+West End,1990,less than High School,361,11.88%
+West End,1990,High School or GED,307,10.10%
+West End,1990,Some College or Associate's Degree,491,16.15%
+West End,1990,Bachelor's Degree or Higher,1881,61.88%
+West End,2000,less than High School,420,10.78%
+West End,2000,High School or GED,485,12.45%
+West End,2000,Some College or Associate's Degree,606,15.55%
+West End,2000,Bachelor's Degree or Higher,2386,61.23%
+West End,2010,less than High School,-,
+West End,2010,High School or GED,-,
+West End,2010,Some College or Associate's Degree,-,
+West End,2010,Bachelor's Degree or Higher,-,
+West Roxbury,1950,less than High School,6754,40.34%
+West Roxbury,1950,High School or GED,6190,36.97%
+West Roxbury,1950,Some College or Associate's Degree,1683,10.05%
+West Roxbury,1950,Bachelor's Degree or Higher,2117,12.64%
+West Roxbury,1960,less than High School,7054,38.21%
+West Roxbury,1960,High School or GED,6781,36.74%
+West Roxbury,1960,Some College or Associate's Degree,2298,12.45%
+West Roxbury,1960,Bachelor's Degree or Higher,2326,12.60%
+West Roxbury,1970,less than High School,6343,30.16%
+West Roxbury,1970,High School or GED,8796,41.83%
+West Roxbury,1970,Some College or Associate's Degree,2692,12.80%
+West Roxbury,1970,Bachelor's Degree or Higher,3198,15.21%
+West Roxbury,1980,less than High School,4538,20.76%
+West Roxbury,1980,High School or GED,8968,41.03%
+West Roxbury,1980,Some College or Associate's Degree,3490,15.97%
+West Roxbury,1980,Bachelor's Degree or Higher,4863,22.25%
+West Roxbury,1990,less than High School,2864,12.80%
+West Roxbury,1990,High School or GED,6839,30.57%
+West Roxbury,1990,Some College or Associate's Degree,4564,20.40%
+West Roxbury,1990,Bachelor's Degree or Higher,8106,36.23%
+West Roxbury,2000,less than High School,2713,12.62%
+West Roxbury,2000,High School or GED,5105,23.75%
+West Roxbury,2000,Some College or Associate's Degree,4717,21.94%
+West Roxbury,2000,Bachelor's Degree or Higher,8964,41.69%
+West Roxbury,2010,less than High School,-,
+West Roxbury,2010,High School or GED,-,
+West Roxbury,2010,Some College or Associate's Degree,-,
+West Roxbury,2010,Bachelor's Degree or Higher,-,
